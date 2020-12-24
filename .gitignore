@@ -9,7 +9,13 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*
-/tmp/*
+
+/tmp/cache
+/tmp/storage
+/tmp/.keep
+/tmp/development_secret.txt
+/tmp/restart.txt
+
 !/log/.keep
 !/tmp/.keep
 
