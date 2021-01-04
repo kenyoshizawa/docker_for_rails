@@ -1,3 +1,6 @@
+role :app, 'kenyoshizawa@54.248.47.209'
+role :web, 'kenyoshizawa@54.248.47.209'
+role :db, 'kenyoshizawa@54.248.47.209'
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
