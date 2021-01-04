@@ -47,6 +47,12 @@ end
 group :development do
   gem 'bcrypt_pbkdf'
   gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-nginx'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-yarn'
+  gem 'capistrano3-puma'
   gem 'ed25519'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
