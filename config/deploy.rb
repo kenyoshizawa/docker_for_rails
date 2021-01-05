@@ -6,7 +6,7 @@ set :user, 'kenyoshizawa'
 set :deploy_to, "/var/www/docker_for_rails"
 set :linked_files, %w[config/master.key config/database.yml]
 set :linked_dirs, %w[log tmp/pids tmp/cache tmp/sockets public/system vendor/bundle]
-# set :rbenv_ruby, File.read('.ruby-version').strip
+set :rbenv_ruby, File.read('.ruby-version').strip
 set :puma_threds, [4, 16]
 set :puma_workers, 0
 set :puma_bind, "unix:///var/www/docker_for_rails/shared/tmp/sockets/puma.sock"
@@ -15,11 +15,6 @@ set :puma_pid, "/var/www/docker_for_rails/shared/tmp/pids/puma.pid"
 set :puma_access_log, "/var/www/docker_for_rails/shared/log/puma.error.log"
 set :puma_error_log, "/var/www/docker_for_rails/shared/log/puma.access.log"
 set :puma_preload_app, true
-
-set :rbenv_type, :user
-set :rbenv_ruby, '2.6.4'
-set :rbenv_path, '~/.rbenv'
-set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
 
 namespace :puma do
   desc 'Create Directories for Puma Pids and Socket'
