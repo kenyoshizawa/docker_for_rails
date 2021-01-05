@@ -16,6 +16,8 @@ set :puma_access_log, "/var/www/docker_for_rails/shared/log/puma.error.log"
 set :puma_error_log, "/var/www/docker_for_rails/shared/log/puma.access.log"
 set :puma_preload_app, true
 
+set :rbenv_path, '~/.rbenv'
+
 namespace :puma do
   desc 'Create Directories for Puma Pids and Socket'
   task :make_dirs do
