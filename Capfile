@@ -9,7 +9,6 @@ require 'capistrano/yarn'
 require "capistrano/scm/git"
 require "capistrano/puma"
 require "capistrano/nginx"
-require 'sshkit/sudo'
 
 install_plugin Capistrano::SCM::Git
 install_plugin Capistrano::Puma
